@@ -233,13 +233,13 @@ a {
 }
 .service-item {
     display: flex;
-    padding: 20px 18px;
+    padding: 10px 18px 20px;
 }
 .service-item:hover {
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
 .service-item__body {
-    margin-top: 10px;
+    padding-top: 10px;
 }
 .service-item__heading {
     color: #10375c;
