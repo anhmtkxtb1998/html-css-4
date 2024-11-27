@@ -260,3 +260,243 @@ a {
     display: inline-block;
     margin-top: 55px;
 }
+/* How it work */
+.work {
+    padding: 100px 0 116px;
+    background: #f6fbff;
+}
+.work__heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.work__desc {
+    margin-top: 18px;
+    width: 40%;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+.work-list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.work-item {
+    padding: 42px;
+    border-radius: 4px;
+    border: 16px solid #eaf6ff;
+}
+.work-item__icon {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+.work-item__desc {
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.work-item__link {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.work-item:hover {
+    border-color: #2e80ce;
+    margin-top: -16px;
+}
+.work-item:hover .work-item__link {
+    color: #2e80ce;
+    font-weight: 400;
+}
+/* Features */
+.features {
+    padding: 70px 0;
+}
+.features__row {
+    display: flex;
+    align-items: center;
+}
+.features__images {
+    width: 49%;
+    display: flex;
+}
+.features__image:first-child {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+.features__image:last-child {
+    position: relative;
+    margin: 121px 0 0 -238px;
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.features__content {
+    padding-left: 130px;
+}
+.features__heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.features__desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.66;
+}
+.features__btn {
+    margin-top: 38px;
+    display: block;
+    width: 205px;
+}
+/* Member */
+.member {
+    padding: 170px 0;
+}
+.member__heading {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.member__btn {
+    display: block;
+    margin: 38px auto 0;
+    width: 206px;
+}
+.member-list {
+    margin-top: 85px;
+    display: flex;
+    gap: 30px;
+}
+.member-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+.member-item__thumb {
+    display: block;
+    padding: 28px 4px 0;
+    max-width: 100%;
+    height: 290px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #eaf6ff;
+}
+.member-item__name {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.member-item__detail {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+.member-controls {
+    margin-top: 38px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.member-control__item {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.member-control__item:hover .member-control__icon {
+    color: #575f66;
+}
+.member-control__item:hover {
+    background: #2e80ce;
+    border: none;
+}
+.member-control__item:hover .member-control__icon {
+    color: #fff;
+    cursor: pointer;
+}
+/* Install app */
+.install-app {
+    margin-top: 95px;
+    border-radius: 4px;
+}
+.install-app__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e80ce;
+}
+.install-app__mobile-image {
+    display: block;
+    margin-top: -95px;
+    margin-left: 70px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+.install-app-content {
+    /* padding-left: 160px; */
+    /* padding-left: 514px;                                                                          */
+    width: 50%;
+}
+.install-app__heading {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.install-app__desc {
+    margin-top: 18px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 30px; 
+}
+.install-app__btns {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
