@@ -3,6 +3,8 @@
 }
 :root {
     --header-bg: #10375c;
+    --font-news: Inner;
+    --font-footer: "Open Sans";
 }
 html {
     font-size: 62.5%;
@@ -35,6 +37,35 @@ a {
 }
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+.controls {
+    margin-top: 38px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.control__item {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.control__item:hover .control__icon {
+    color: #575f66;
+}
+.control__item:hover {
+    background: #2e80ce;
+    border: none;
+}
+.control__item:hover .control__icon {
+    color: #fff;
     cursor: pointer;
 }
 /* Header */
@@ -428,35 +459,7 @@ a {
     font-weight: 300;
     line-height: 1.86;
 }
-.member-controls {
-    margin-top: 38px;
-    display: flex;
-    gap: 18px;
-    align-items: center;
-    justify-content: center;
-}
-.member-control__item {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid #575f66;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.25s;
-}
 
-.member-control__item:hover .member-control__icon {
-    color: #575f66;
-}
-.member-control__item:hover {
-    background: #2e80ce;
-    border: none;
-}
-.member-control__item:hover .member-control__icon {
-    color: #fff;
-    cursor: pointer;
-}
 /* Install app */
 .install-app {
     margin-top: 95px;
@@ -493,10 +496,139 @@ a {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 30px; 
+    line-height: 30px;
 }
 .install-app__btns {
     margin-top: 38px;
     display: flex;
     gap: 28px;
+}
+
+/* news */
+.news {
+    padding: 170px 0;
+}
+.news__body {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+.news__content {
+    flex: 1;
+    flex-shrink: 0;
+}
+.news__heading {
+    width: 470px;
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.news__link {
+    display: inline-block;
+    padding: 28px 0;
+    color: #10375c;
+    font-family: var(--font-news);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-decoration-line: underline;
+}
+.news__control {
+    margin-top: 0;
+    justify-content: flex-start;
+}
+.news-list {
+    display: flex;
+    gap: 30px;
+}
+.news-item {
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+    transition: 0.25s;
+}
+.news-item:hover {
+    border: none;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.news-item:hover .news-item__link {
+    color: #2e80ce;
+}
+.news-item:hover .news-item__thumb {
+    transform: scale(1.1);
+}
+.news-item__thumb {
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+.news-item__body {
+    padding: 18px 22px;
+}
+.news-item__title {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62;
+}
+.news-item__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+}
+.news-item__link {
+    display: block;
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Appointment */
+
+.appointment__body {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6fbff;
+}
+.appointment__heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.appointment__desc {
+    position: relative;
+    margin-top: 38px;
+    width: 53%;
+    color: #575f66;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.appointment__desc::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.appointment-cta {
+    margin-top: 38px;
 }
