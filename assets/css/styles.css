@@ -632,3 +632,127 @@ a {
 .appointment-cta {
     margin-top: 38px;
 }
+/* Footer */
+.footer {
+    padding: 100px 0 42px;
+    background: #10375c;
+}
+.footer__row {
+    display: flex;
+    gap: 78px;
+}
+.footer__column {
+    flex-shrink: 0;
+}
+.footer__column:first-child .footer__desc {
+    margin-top: 21px;
+    width: 336px;
+}
+.footer__desc {
+    color: #a9b3bb;
+    font-family: var(--font-footer);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+.footer__heading {
+    color: #fff;
+    font-family: var(--font-footer);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
+}
+.footer__list {
+    padding: 15px 0 23px;
+}
+.footer__item {
+    padding: 5px 0;
+}
+.footer__link {
+    color: #a9b3bb;
+    font-family: var(--font-footer);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+.footer__socials {
+    margin: 20px 0 28px;
+    display: flex;
+    gap: 10px;
+}
+.footer__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.25s;
+}
+.footer__icon {
+    color: #2e80ce;
+}
+.footer__image:hover {
+    background: #2e80ce;
+    transform: scale(1.1);
+}
+.footer__image:hover .footer__icon {
+    color: #fff;
+}
+.footer__socials + .footer__heading {
+    margin-bottom: 20px;
+}
+.footer__socials ~ .footer__desc {
+    display: block;
+    width: 273px;
+}
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+.footer-form__email {
+    padding: 0 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    outline: none;
+    background: transparent;
+    color: #9ca8b1;
+    font-family: var(--font-footer);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+.footer-form__email::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9ca8b1;
+}
+.footer-form__submit {
+    min-width: 108px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 4px;
+    background: #2e80ce;
+    font-family: var(--font-footer);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1, 86;
+}
+.footer__copyright {
+    margin-top: 58px;
+    position: relative;
+    text-align: center;
+}
+.footer__copyright::before {
+    position: absolute;
+    top: -28px;
+    content: "";
+    display: block;
+    background: #406181;
+    width: 1170px;
+    height: 1px;
+}
